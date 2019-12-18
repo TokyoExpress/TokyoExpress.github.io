@@ -26,7 +26,6 @@
 		border-bottom: 2px solid #1787B2;
 		padding-top: 3px;
 	}
-
 	#socialmedia {
 		position: absolute;
 		margin-top: 200px;
@@ -81,7 +80,6 @@
 		text-align: center;
 		display: block;
 	}
-
 	form:after {
     	content: "POW! ";
     	font-family: "courier";
