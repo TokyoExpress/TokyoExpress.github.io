@@ -4,7 +4,7 @@
 		background-color: #EFF5F5;
 	}
 	body {
-    	margin-top: 200px;
+    	margin-top: 500px;
 	}
 	p {
 		font-size: 12pt;
@@ -27,22 +27,19 @@
 		border-bottom: 2px solid #1787B2;
 		padding-top: 3px;
 	}
-	#socialmedia p {
-		display: inline-block;
-		float: left;
-		vertical-align: middle;
-	}
+
 	#socialmedia {
-		margin-right: 150px;
+		position: absolute;
+		margin-top: 200px;
+		width: 100%;
+		margin-bottom: 50px;
+		left: 50%;
+		margin-left: -90px;
 	}
 	#socialmedia a {
 		display: inline-block;
-		float: right;
 		line-height: 50px;
-		vertical-align: middle;
-		margin-right: 10px;
-		margin-top: 20px;
-		margin-bottom: 10px;
+		margin: 25px 5px;
 	}
 	#grab {
 		display: block;
@@ -53,53 +50,37 @@
 		position: absolute;
 		height: auto;
 		top: 0;
-		right: 50%;
-		margin-right: -560px;
-		margin-top: 20px;
-		text-align: right;
+		margin: 0px;
+		text-align: center;
 		width: 100%;
 		margin-bottom: 100px;
 	}
 	#navigation a {
-    	display: inline-block;
-    	vertical-align: middle;
-    	padding: 5px 10px;
+		display: block;
+		margin: auto;
+    	padding: 15px 10px;
     	font-size: 15px;
 	}
 	#navigation img {
-		display: inline-block;
-		text-align: left;
-		vertical-align: middle;
-    	margin: 50px 350px 50px 0px;
+		display: block;
+		text-align: center;
+    	margin: 50px auto;
 	}
 	#navigation #diff {
-		margin-right: 175px;
+		margin: 50px auto;
 	}
 	#blurb {
 		position: absolute;
-		left: 50%;
-		margin-left: -550px;
+		margin: 10px auto;
 		height: auto;
-		margin-top: 20px;
+		width: 100%;
 	}
 	#blurb h1 {
-		width: 525px;
-		height: auto;
-		font-size: 28px;
-		text-align: left;
-		vertical-align: middle;
-		display: inline-block;
-	}
-	#blurb p {
 		width: 500px;
-		height: auto;
-		font-size: 20px;
-		text-align: left;
-		vertical-align: middle;
-		display: inline-block;
-		padding-left: 50px;
-		margin-left: 35px;
-		border-left: 2px solid;
+		margin: auto;
+		font-size: 28px;
+		text-align: center;
+		display: block;
 	}
 
 	form:after {
