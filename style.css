@@ -14,7 +14,6 @@
 	}
 	#navigation a{
 		text-decoration: none;
-		transition: all 1s linear 0;
 	}
 	#navigation a:hover {
 		color: #1787B2;
