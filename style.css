@@ -1,3 +1,29 @@
+	#navigation *{
+		animation: transitionIn 0.75s;
+	}
+	img {
+		animation: transitionInn 0.75s;
+	}
+	@keyframes transitionIn {
+		from {
+			opacity: 0;
+			transform: translateY(-10px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+	@keyframes transitionInn {
+		from {
+			opacity: 0;
+			transform: translateY(10px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
 	* {
 		font-family: 'Montserrat', sans-serif;
 		color: #2D383B;
