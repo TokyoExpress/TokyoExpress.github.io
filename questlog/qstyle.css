@@ -182,6 +182,9 @@
 		#page {
 			margin-top: 350px;
 		}
+		#page h1{
+			width: 85%;
+		}
 		#page p {
 			font-size: 14px;
 			width: 85%;
