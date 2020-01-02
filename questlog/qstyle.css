@@ -154,6 +154,19 @@
 		margin-right: auto;
 		margin-bottom: 35px;
 	}
+	#page form p {
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+	input[type=text], input[type=submit], textarea {
+   		background: transparent;
+    	border: 1px solid;
+    	border-radius: 3px;
+    	padding: 3px;
+	}
+	input[type=submit]:hover {
+		cursor: pointer;
+	}
 	@media screen and (max-width: 900px) {
 		#logo {
 			display: block;
