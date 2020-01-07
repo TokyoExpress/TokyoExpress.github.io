@@ -1,0 +1,103 @@
+	* {
+		font-family: 'Montserrat', sans-serif;
+		color: #2D383B;
+		background-color: #EFF5F5;
+	}
+	html {
+		scroll-behavior: smooth;
+	} 
+	#logo {
+		animation: transitionIn 1s;
+	}
+	#landing {
+		animation: transitionRest 0.75s 0.75s forwards;
+	}
+	@keyframes transitionIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes transitionRest {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	#nav {
+		background-color: #2D383B;
+		color: #EFF5F5;
+		display: flex;
+		width: 100%;
+	}
+	#nav h2, #nav a {
+		text-decoration: none;
+		background-color: #2D383B;
+		color: #EFF5F5;
+		justify-content: space-around;
+  		vertical-align: middle;
+  		margin: 15px auto;
+  		z-index:10;
+  		left:0;
+  		right:0;
+	}
+	#land, #bio, #web, #graph, #stats, #write, #music {
+		color: #EFF5F5;
+		transition: all 0.3s;
+	}
+	h1 {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 55px;
+		letter-spacing: 2px;
+		line-height: 35px;
+	}
+	h3 {
+		font-size: 22px;
+	}
+	#landing {
+		opacity: 0;
+		height: 800px;
+		display: grid;
+		grid-template-columns: 45% 10% 45%;
+		grid-template-rows: repeat(16, 50px);
+	}
+	#bio {
+		height: 1000px;
+	}
+	#web {
+		height: 1000px;
+	}
+	#landing #landingtext {
+		grid-column-start: 3;
+		grid-row-start: 5;
+	}
+	#landing img {
+		grid-column-start: 1;
+		grid-row-start: 4;
+		justify-self: end;
+	}
+	#logo {
+		text-align: center;
+		display: block;
+		margin: 50px auto;
+	}
+	@media screen and (max-width: 900px) {
+		#landing {
+			display: block;
+			text-align: center;
+			left: 50%;
+		}
+		#nav h2, #nav a {
+			font-size: 10px;
+		}
+	}
