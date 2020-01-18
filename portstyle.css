@@ -5,6 +5,7 @@
 	}
 	html {
 		scroll-behavior: smooth;
+		overflow-x: hidden
 	} 
 	#logo {
 		animation: transitionIn 1s;
@@ -47,11 +48,11 @@
 		justify-content: space-around;
   		vertical-align: middle;
   		margin: 15px auto;
-  		z-index:10;
+  		z-index:9999;
   		left:0;
   		right:0;
 	}
-	#land, #bio, #web, #graph, #stats, #write, #music {
+	#land, #biotime, #web, #graph, #stats, #write, #music {
 		color: #EFF5F5;
 		transition: all 0.3s;
 	}
@@ -72,10 +73,277 @@
 		grid-template-rows: repeat(16, 50px);
 	}
 	#bio {
-		height: 1000px;
+		font-size: 0;
+		margin: 0;
+		height: 900px;
+		background-image: url("https://i.imgur.com/ynITKQ0.jpg?1");
+		background-attachment: fixed;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: 55% 45%;
+		grid-template-rows: repeat(18, 50px);
 	}
-	#web {
-		height: 1000px;
+	#bio #firstp {
+		color: white;
+		width: 90%;
+		text-align: center;
+		justify-self: center;
+		font-size: 20px;
+		background: none;
+		grid-column-start: 2;
+		grid-row-start: 5;
+	}
+	#bio #secp {
+		color: white;
+		width: 90%;
+		text-align: center;
+		justify-self: center;
+		font-size: 20px;
+		background: none;
+		grid-column-start: 2;
+		grid-row-start: 11;
+	}
+	#bio #tag {
+		color: white;
+		width: 90%;
+		text-align: center;
+		justify-self: center;
+		font-size: 36px;
+		background: none;
+		grid-column-start: 2;
+		grid-row-start: 3;
+	}
+	#skills, #skills2, #skills3 {
+		font-weight: bolder;
+		color: white;
+		text-shadow: 2px 2px black;
+		width: 90%;
+		text-align: center;
+		justify-self: center;
+		font-size: 28px;
+		background: none;
+		grid-column-start: 1;
+	}
+	#inception img, #inception2 img, #inception3 img {
+		display: inline;
+		background: none;
+		margin-left: 15px;
+		margin-right: 15px;
+		vertical-align: middle;
+	}
+	#bio #inception {
+		grid-column-start: 1;
+		grid-row-start: 5;
+		background: none;
+		display: inline;
+		margin: 0 auto;
+	}
+	#bio #inception2 {
+		grid-column-start: 1;
+		grid-row-start: 10;
+		background: none;
+		display: inline;
+		margin: 0 auto;
+	}
+	#bio #inception3 {
+		grid-column-start: 1;
+		grid-row-start: 15;
+		background: none;
+		display: inline;
+		margin: 0 auto;
+	}
+	#skills {
+		grid-row-start: 3;
+	}
+	#skills2 {
+		grid-row-start: 8;
+	}
+	#skills3 {
+		grid-row-start: 13;
+	}
+	.box {
+		height: 50px;
+		display: block;
+		background-color: #2D383B;
+	}
+	#webbox {
+		height: 850px;
+		display: grid;
+		grid-template-rows: repeat(17, 50px);
+		grid-template-columns: 40% 30% 30%;
+	}
+	#webbox h2 {
+		font-size: 30px;
+		grid-row-start: 2;
+		grid-column-start: 1;
+		justify-self: center;
+		text-align: center;
+	}
+	#webbox p {
+		font-size: 16px;
+		grid-row-start: 4;
+		grid-column-start: 1;
+		width: 80%;
+		justify-self: center;
+		text-align: left;
+		line-height: 30px;
+	}
+	#webbox #another {
+		font-size: 16px;
+		grid-row-start: 8;
+		grid-column-start: 1;
+		width: 80%;
+		justify-self: center;
+		text-align: left;
+	}
+	#webbox #another2 {
+		font-size: 16px;
+		grid-row-start: 14;
+		grid-column-start: 1;
+		width: 80%;
+		justify-self: center;
+		text-align: left;
+	}
+	#webbox #samp {
+		font-size: 24px;
+		color: #05B0CD;
+		grid-row-start: 2;
+		grid-column-start: 2;
+		justify-self: center;
+		align-self: start;
+		text-align: center;
+	}
+	#webbox #loltown {
+		font-size: 20px;
+		color: #05B0CD;
+		grid-row-start: 4;
+		grid-column-start: 2;
+		justify-self: center;
+		align-self: start;
+		text-align: center;
+	}
+	#webbox #loltown2 {
+		font-size: 20px;
+		color: #05B0CD;
+		grid-row-start: 8;
+		grid-column-start: 2;
+		justify-self: center;
+		align-self: start;
+		text-align: center;
+	}
+	#webbox #loltown3 {
+		font-size: 20px;
+		color: #05B0CD;
+		grid-row-start: 12;
+		grid-column-start: 2;
+		justify-self: center;
+		align-self: start;
+		text-align: center;
+	}
+	#webbox #desc {
+		font-size: 16px;
+		grid-row-start: 5;
+		grid-column-start: 2;
+		justify-self: center;
+		align-self: start;
+		text-align: center;
+	}
+	#webbox #desc2 {
+		font-size: 16px;
+		grid-row-start: 9;
+		grid-column-start: 2;
+		justify-self: center;
+		align-self: start;
+		text-align: center;
+	}
+	#webbox #desc3 {
+		font-size: 16px;
+		grid-row-start: 13;
+		grid-column-start: 2;
+		justify-self: center;
+		align-self: start;
+		text-align: center;
+	}
+	#webbox #pic {
+		grid-column-start: 3;
+		grid-row-start: 2;
+		justify-self: center;
+	}
+	#webbox #pic2 {
+		grid-column-start: 3;
+		grid-row-start: 7;
+		justify-self: center;
+	}
+	#webbox #pic3 {
+		grid-column-start: 3;
+		grid-row-start: 12;
+		justify-self: center;
+	}
+	#graphbox {
+		display: flex;
+		flex-direction: column;
+		height: 1200px;
+		color: black;
+		background-color: white;
+		z-index: -1;
+	}
+	#graphbox #catch{
+		display: block;
+		margin: 50px auto 10px auto;
+		background-color: white;
+	}
+	#graphbox .showcase {
+		display: flex;
+		width: 90%;
+		margin: 50px auto 10px auto;
+		background: none;
+		justify-content: space-around;
+		font-size: 0;
+	}
+	#graphbox .showcase .proj {
+		width: 33%;
+		display: flex;
+		flex-direction: column;
+		background: none;
+		justify-content: center;
+	}
+	#graphbox .showcase .proj h3{
+		margin: 30px auto 15px auto;
+		background: none;
+	}
+	#graphbox .showcase .proj p{
+		margin: 0 auto;
+		background: none;
+		font-size: 14px;
+	}
+	#graphbox .showcase a {
+		border: 4px solid black;
+		transition: all 0.25s;
+		margin: 0 auto;
+	}
+	#graphbox .showcase a:hover {
+		opacity: 0.5;
+	}
+	#graphbox .showcase a img {
+		transition: all 0.25s;
+	}
+	#graphbox .showcase a img:hover {
+		transform: scale(1.025);
+	}
+	#graphbox #blubby {
+		margin: 50px auto 10px auto;
+		font-size: 18px;
+		width: 70%;
+		text-align: center;
+	}
+	#graphbox h2 {
+		margin: 50px auto 10px auto;
+		font-size: 30px;
+		background: none;
+		text-align: center;
+	}
+	#statbox {
+		height: 850px;
 	}
 	#landing #landingtext {
 		grid-column-start: 3;
@@ -91,13 +359,59 @@
 		display: block;
 		margin: 50px auto;
 	}
+	@media screen and (max-width: 1200px) {
+		#inception img, #inception2 img, #inception3 img {
+			height: 50px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+		#landingtext h3 {
+			font-size: 12px;
+		}
+		#bio #tag, #bio #firstp, #bio #secp {
+			font-size: 14px;
+			text-shadow: 1px 1px black;
+		}
+		#nav h2, #nav a {
+			font-size: 10px;
+		}
+		#webbox {
+			grid-template-columns: 50% 50%;
+		}
+		#webbox p, #webbox #another, #webbox #another2, #webbox #another3, #webbox #desc, #webbox #desc2, #webbox #desc3{
+			font-size: 12px;
+			line-height: 15px;
+		}
+		#webbox h2 {
+			font-size: 20px;
+		}
+		#graphbox img {
+			height: 50px;
+		}
+		#graphbox a img {
+			height: 100px;
+		}
+		#graphbox a {
+			width: 100px;
+		}
+		#graphbox h3 {
+			font-size: 11px;
+		}
+		#graphbox .showcase .proj p{
+			font-size: 9px;
+		}
+		#graphbox #catch {
+			height: 125px;
+		}
+		#bio {
+			grid-template-columns: 100%;
+		}
+	}
 	@media screen and (max-width: 900px) {
+
 		#landing {
 			display: block;
 			text-align: center;
 			left: 50%;
-		}
-		#nav h2, #nav a {
-			font-size: 10px;
 		}
 	}

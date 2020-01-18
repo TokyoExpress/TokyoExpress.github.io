@@ -26,7 +26,7 @@
     			bar.style.top=0;
     			bar.style.left=0;
     			bar.style.right=0;
-    			comp.style.marginBottom='82px';
+    			comp.style.marginBottom='60px';
   			}else{
     		bar.style.position='relative';
     		comp.style.marginBottom='0';
@@ -35,21 +35,48 @@
   			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   			var scrolled = (winScroll / height) * 100;
-  			if (winScroll < 975) {
+  			if (winScroll <= 975) {
   			document.getElementById('land').style.color="#05B0CD";
-  			document.getElementById('bio').style.color="#EFF5F5";
+  			document.getElementById('biotime').style.color="#EFF5F5";
   			document.getElementById('web').style.color="#EFF5F5";
   			document.getElementById('graph').style.color="#EFF5F5";
   			document.getElementById('stats').style.color="#EFF5F5";
   			document.getElementById('write').style.color="#EFF5F5";
   			document.getElementById('music').style.color="#EFF5F5";
   			}
-  			if (winScroll > 975 && winScroll < 2000) {
+  			if (winScroll > 975 && winScroll <= 1900) {
   			document.getElementById('land').style.color="#EFF5F5";
-  			document.getElementById('bio').style.color="#05B0CD";
+  			document.getElementById('biotime').style.color="#05B0CD";
   			document.getElementById('web').style.color="#EFF5F5";
   			document.getElementById('graph').style.color="#EFF5F5";
   			document.getElementById('stats').style.color="#EFF5F5";
+  			document.getElementById('write').style.color="#EFF5F5";
+  			document.getElementById('music').style.color="#EFF5F5";
+  			}
+  			if (winScroll > 1900 && winScroll <= 2800) {
+  			document.getElementById('land').style.color="#EFF5F5";
+  			document.getElementById('biotime').style.color="#EFF5F5";
+  			document.getElementById('web').style.color="#05B0CD";
+  			document.getElementById('graph').style.color="#EFF5F5";
+  			document.getElementById('stats').style.color="#EFF5F5";
+  			document.getElementById('write').style.color="#EFF5F5";
+  			document.getElementById('music').style.color="#EFF5F5";
+  			}
+  			if (winScroll > 2800 && winScroll <= 4050) {
+  			document.getElementById('land').style.color="#EFF5F5";
+  			document.getElementById('biotime').style.color="#EFF5F5";
+  			document.getElementById('web').style.color="#EFF5F5";
+  			document.getElementById('graph').style.color="#05B0CD";
+  			document.getElementById('stats').style.color="#EFF5F5";
+  			document.getElementById('write').style.color="#EFF5F5";
+  			document.getElementById('music').style.color="#EFF5F5";
+  			}
+   			if (winScroll > 4050 && winScroll <= 5000) {
+  			document.getElementById('land').style.color="#EFF5F5";
+  			document.getElementById('biotime').style.color="#EFF5F5";
+  			document.getElementById('web').style.color="#EFF5F5";
+  			document.getElementById('graph').style.color="#EFF5F5";
+  			document.getElementById('stats').style.color="#05B0CD";
   			document.getElementById('write').style.color="#EFF5F5";
   			document.getElementById('music').style.color="#EFF5F5";
   			}
@@ -85,26 +112,104 @@
 	</div>
 	<div id="nav">
 		<h2><a href="#top" id="land">landing</a></h2>
-		<h2><a href="#bios" id="bio">bio</a></h2>
+		<h2><a href="#bios" id="biotime">bio</a></h2>
 		<h2><a href="#webs" id="web">web design</a></h2>
-		<h2><a href="#graph" id="graph">graphic design</a></h2>
-		<h2><a href="#stats" id="stats">statistics and data science</a></h2>
+		<h2><a href="#graphs" id="graph">graphic design</a></h2>
+		<h2><a href="#statsy" id="stats">statistics and data science</a></h2>
 		<h2><a href="#write" id="write">writing</a></h2>
 		<h2><a href="#music" id="music">music</a></h2>
 	</div>
 	<a name="bios"></a>
 	<div id="bio">
-		<h2>bio</h2>
-		<p></p>
+			<p id="skills">Experienced with:</p>
+			<div id="inception">
+			<img src="https://i.imgur.com/F90UmDR.png?1" title="HTML/CSS" height=125px></img>
+			<img src="https://i.imgur.com/PJTR2As.png" title="C++" height=100px></img>
+			<img style="margin-right: 0" src="https://i.imgur.com/8BzPIxl.png?1" title="SQL" height=100px></img>
+			<img style="margin-left: 5px" src="https://i.imgur.com/U0LCLpV.png" title="Python"height=75px></img>
+			<img src="https://i.imgur.com/7tH9cow.png" title="Adobe Illustrator" height=75px></img>
+			<img src="https://i.imgur.com/CyL2GWy.png" title="Adobe Photoshop" height=75px></img>
+			</div>
+			<div id="inception2">
+			<img src="https://i.imgur.com/PXuq7P1.png" title="JavaScript" height=75px></img>
+			<img src="https://i.imgur.com/Gb0ZJAZ.png" title="Microsoft Excel" height=75px></img>
+			<img src="https://i.imgur.com/zHKDGNE.png" title="R" height=75px></img>
+			<img src="https://i.imgur.com/RmNlY8J.png?2" title="Java" height=150px></img>
+			<img src="https://i.imgur.com/fySCm2G.png" title="React" height=100px></img>
+			<img src="https://i.imgur.com/XqhTNf4.png" title="Adobe Premiere Pro" height=75px></img>
+			</div>
+			<div id="inception3">
+			<img src="https://i.imgur.com/8YebBnH.png" title="Swift/Objective-C" height=75px></img>
+			<img src="https://i.imgur.com/PhKHQ8c.png" title="Blender" height=75px></img>
+			<img src="https://i.imgur.com/D5J1WG8.png" title="Salesforce" height=75px></img>
+			<img src="https://i.imgur.com/0B10aQo.png" title="Adobe After Effects" height=75px></img>
+			</div>
+			<p id="skills2">Familiar with:</p>
+			<p id="skills3">Dabbled in:</p>
+			<p id="tag">"Let's go exploring!"</p>
+			<p id="firstp">I'm Samuel Z Guo, Bay Area born and raised. Most people call me Sam. I'm currently a sophomore at the University of California, Santa Barbara studying Financial Mathematics and Statistics. In my free time, I like to look for new things to do or work on various projects. I analyze data, I develop games, I run a clothing brand, I update a blog, I make stickers, I design websites, I play jazz piano, and I draw once in a while (I'll admit I'm not very good at that one). I'm experienced in many industry standard tools and programs, most of which are shown on the left (hover for name).</p>
+			<p id="secp">But more important than what I know is why and how I know them. I have a passion to create, and I will stop at nothing to make myself someone who is capable of making things, whether that be logos, apps, reports, poetry, animations, apps, or anything else. That's the reason I never shy away from an opportunity to pick up a new skill. I'm driven and I'm self-motivated. I am always eager to learn and I continually persevere in improving myself and my skills each and every day. I know that putting in the time and effort will yield results, and I'm determined to continue exploring my capabilities in these fields and the ways I can use these resources.</p>
 	</div>
-	<div id="web"><a name="webs"></a>
-	<h2>web design</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<a name="webs"></a>
+	<div class="box"></div>
+	<div id="webbox">
+		<h2>"In this case, form <i>is</i> function."</h2>
+		<p>Like many aspiring young people who wanted a cool website for their blog or online shop, my journey with web design started on platforms like Blogger and Squarespace. However, I soon grew tired and frustrated with the limited customization options available (and also the $144 a year), opting instead to build my own websites from scratch.</p>
+		<p id="another">It is often said in the context of design that "form follows function". But I believe web design is one of the best intersections of form and function in design. A good looking website does a phenomenal job simply by being aesthetically pleasing. At the same time, a highly functional website's features and layout tend to make it look cool in the process. Web development has never stopped being exciting to me. I still learn new things about it every day.</p>
+		<p id="another2">The websites to the right (and this portfolio page) are hand coded in pure HTML/CSS/JavaScript.</p>
+		<p id="samp">sample projects</p>
+		<a id="loltown" target="_blank" href="https://www.explorehq.org/questlog">Questlog</a>
+		<p id="desc">This is a complete blog website. Equipped with individual posts, navigation bar, other content pages, and contact form.</p>
+		<a id="loltown2" href="https://www.explorehq.org/portfolio.html">Samuel Z Guo's Portfolio</a>
+		<p id="desc2">This is the page you're on now. Features parallax scrolling, fixed navigation bar, dynamic elements, and more.</p>
+		<a id="loltown3" target="_blank" href="https://www.explorehq.org">Explore HQ Landing Page</a>
+		<p id="desc3">This is the landing page for my umbrella group for all my projects. Not many cool features, just a nice, simple website. Limited functionality as of now.</p>
+		<img id="pic" src="https://i.imgur.com/LbD1DUp.png" height=200px></img>
+		<img title="inception" id="pic2"src="https://i.imgur.com/MeYR4QX.png" height=200px></img>
+		<img id="pic3"src="https://i.imgur.com/IKqMkKY.png" height=200px></img>
 	</div>
-	<h2>graphic design</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<h2>statistics and data science</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<a name="graphs"></a>
+	<div class="box"></div>
+	<div id="graphbox">
+		<img id="catch" style="background: none" src="https://i.imgur.com/iwZe7VI.png" height=200px></img>
+		<div class="showcase">
+				<img src="https://i.imgur.com/f9ccM2Y.png?1" height=150px></img>
+				<img src="https://i.imgur.com/iSe06Uc.png?1" height=150px></img>
+				<img src="https://i.imgur.com/blzBWEo.png" height=150px></img>
+				<img src="https://i.imgur.com/zJCAYVY.png" height=150px></img>
+				<img src="https://i.imgur.com/wLCtYZB.png" height=150px></img>
+				<img src="https://i.imgur.com/qzdG8Uf.png" height=150px></img>
+				<img src="https://i.imgur.com/gOy1eWy.png?1" height=150px></img>
+		</div>
+		<p id="blubby" style="background: none">It may seem paradoxical for something to be both simple and detailed, but that's what I strive for in graphic design. Whether it's a logo, flyer, or motion graphic, it should be sleek and straightforward at a glance, but the memorability: the little touches of continuity and flair within the designs is what pushes it even further beyond.</p>
+		<h2>sample work</h2>
+		<div class="showcase">
+			<div class="proj">
+				<a target="_blank" href="https://www.instagram.com/parasol.co"><img src="https://i.imgur.com/ciXRfjC.png?1" height=250px></a>
+				<h3>Parasol Co.</h3>
+				<p>Clothing Brand</p>
+			</div>
+			<div class="proj">
+				<a target="_blank" href="https://geekhack.org/index.php?topic=101985.0"><img src="https://i.imgur.com/dnixWhr.png?3" height=250px></a>
+				<h3>GMK High Voltage</h3>
+				<p>Mechanical Keycap Set</p>
+			</div>
+			<div class="proj">
+				<a target="_blank" href="https://imgur.com/a/SD4zg5L"><img src="https://i.imgur.com/XY0exiG.jpg?1" height=250px></a>
+				<h3>Various Designs</h3>
+				<p>Stickers, Flyers, Album Art, Etc.</p>
+			</div>
+		</div>
+	</div>
+	<a name="statsy"></a>
+	<div class="box"></div>
+	<div id="statbox">
+		<h2>"Learning lessons from numbers; teaching them to the real world."</h2>
+		<p>fuckin a. Data science is a load of shit. Fuck you fuck you all. Finish this holy shit you literally have 6 days you stupid retard. hurry the fuck up</p>
+		<h3>sample shit</h3>
+		<p>fuck</p>
+	</div>
+	<div class="box"></div>
 	<h2>writing</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<h2>music</h2>
