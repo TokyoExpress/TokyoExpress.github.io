@@ -95,10 +95,10 @@
 		display: inline-block;
 		text-align: left;
 		vertical-align: middle;
-    	margin: 50px 350px 50px 0px;
+    	margin: 50px 360px 50px 0px;
 	}
 	#navigation #diff {
-		margin-right: 175px;
+		margin-right: 50px;
 	}
 	#blurb {
 		position: absolute;
