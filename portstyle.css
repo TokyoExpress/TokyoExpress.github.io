@@ -188,15 +188,16 @@
 	}
 	#webbox p {
 		font-size: 16px;
+		line-height: 25px;
 		grid-row-start: 5;
 		grid-column-start: 1;
 		width: 80%;
 		justify-self: center;
 		text-align: left;
-		line-height: 30px;
 	}
 	#webbox #another {
 		font-size: 16px;
+		line-height: 25px;
 		grid-row-start: 9;
 		grid-column-start: 1;
 		width: 80%;
@@ -205,7 +206,8 @@
 	}
 	#webbox #another2 {
 		font-size: 16px;
-		grid-row-start: 15;
+		line-height: 25px;
+		grid-row-start: 13;
 		grid-column-start: 1;
 		width: 80%;
 		justify-self: center;
@@ -573,6 +575,9 @@
 		grid-row-start: 30;
 		width: 75%;
 		justify-self: center;
+	}
+	#webbox #another2 {
+		grid-row-start: 13;
 	}
 	textarea {
 		width: 300px;
