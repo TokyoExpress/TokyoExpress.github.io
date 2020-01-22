@@ -498,6 +498,9 @@
 			margin-left: 5px;
 			margin-right: 5px;
 		}
+		#landingtext h1{
+			font-size: 40px;
+		}
 		#landingtext h3 {
 			font-size: 12px;
 		}
@@ -506,7 +509,7 @@
 			text-shadow: 1px 1px black;
 		}
 		#nav h2, #nav a {
-			font-size: 10px;
+			font-size: 8px;
 		}
 		#webbox {
 			grid-template-columns: 50% 50%;
@@ -515,11 +518,19 @@
 			font-size: 12px;
 			line-height: 15px;
 		}
+		#webbox #another {
+			line-height: 13px;
+			grid-row-start: 10;
+		}
+		#webbox #another2 {
+			line-height: 13px;
+			grid-row-start: 15;
+		}
 		#webbox h2 {
 			font-size: 30px;
 		}
 		#graphbox img {
-			height: 50px;
+			height: 25px;
 		}
 		#graphbox a img {
 			height: 100px;
@@ -534,7 +545,7 @@
 			font-size: 9px;
 		}
 		#graphbox #catch {
-			height: 125px;
+			height: 75px;
 		}
 		#bio {
 			grid-template-columns: 100%;
@@ -549,6 +560,7 @@
 		}
 		#statbox #blubber {
 			grid-row-start: 6;
+			line-height: 13px;
 		}
 		#statbox #courses {
 			grid-row-start: 24;
@@ -576,13 +588,11 @@
 		width: 75%;
 		justify-self: center;
 	}
-	#webbox #another2 {
-		grid-row-start: 13;
-	}
 	textarea {
 		width: 300px;
 	}
-	#firstp, #secondp, #pic, #pic2, #pic3 {
+	
+	#bio #firstp, #bio #secp, #bio #tag, #webbox #pic, #webbox #pic2, #webbox #pic3 {
 		display: none;
 	}
 	@media screen and (max-width: 900px) {
