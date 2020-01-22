@@ -518,6 +518,12 @@
 			font-size: 12px;
 			line-height: 15px;
 		}
+		#webbox #samp {
+			line-height: 24px;
+		}
+		#webbox p {
+			line-height: 13px;
+		}
 		#webbox #another {
 			line-height: 13px;
 			grid-row-start: 10;
@@ -533,16 +539,16 @@
 			height: 25px;
 		}
 		#graphbox a img {
-			height: 100px;
+			height: 75px;
 		}
 		#graphbox a {
-			width: 100px;
+			width: 75px;
 		}
 		#graphbox h3 {
-			font-size: 11px;
+			font-size: 9px;
 		}
 		#graphbox .showcase .proj p{
-			font-size: 9px;
+			font-size: 7px;
 		}
 		#graphbox #catch {
 			height: 75px;
@@ -560,10 +566,11 @@
 		}
 		#statbox #blubber {
 			grid-row-start: 6;
-			line-height: 13px;
+			font-size: 10px;
+			line-height: 12px;
 		}
 		#statbox #courses {
-			grid-row-start: 24;
+			grid-row-start: 25;
 			margin: 0;
 		}
 		#statbox #statproj {
