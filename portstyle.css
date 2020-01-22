@@ -582,6 +582,9 @@
 	textarea {
 		width: 300px;
 	}
+	#firstp, #secondp, #pic, #pic2, #pic3 {
+		display: none;
+	}
 	@media screen and (max-width: 900px) {
 
 		#landing {
