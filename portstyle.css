@@ -492,6 +492,17 @@
 	input[type=submit]:hover {
 		cursor: pointer;
 	}
+	textarea {
+		width: 75%;
+	}
+	@media screen and (max-width: 1500px) {
+		#bio img {
+			height: 75px;
+		}
+		#webbox img {
+			height: 150px;
+		}
+	}
 	@media screen and (max-width: 1200px) {
 		#inception img, #inception2 img, #inception3 img {
 			height: 50px;
@@ -595,10 +606,6 @@
 		width: 75%;
 		justify-self: center;
 	}
-	textarea {
-		width: 300px;
-	}
-	
 	#bio #firstp, #bio #secp, #bio #tag, #webbox #pic, #webbox #pic2, #webbox #pic3 {
 		display: none;
 	}
