@@ -102,14 +102,18 @@ button {
 	}
 	.day img {
 		width: 80%;
+		border: 5px inset #C19547;
+	}
+	#yesterday img {
+		border: 5px inset black;
 	}
 	#ereday img {
 		width: 80%;
 	}
 	.card {
-		font-size: 24px;
+		font-size: 18px;
 	}
 	.extras {
-		font-size: 18px;
+		font-size: 14px;
 	}
 }
