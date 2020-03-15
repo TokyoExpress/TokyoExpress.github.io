@@ -97,6 +97,9 @@ button {
 	#nav {
 		width: 75%;
 	}
+	button {
+		font-size: 12px;
+	}
 	.day img {
 		width: 80%;
 	}
