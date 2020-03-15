@@ -112,6 +112,7 @@ button {
 	}
 	.card {
 		font-size: 18px;
+		line-height: 8px;
 		margin-top: 25px;
 		margin-bottom: 25px;
 	}
