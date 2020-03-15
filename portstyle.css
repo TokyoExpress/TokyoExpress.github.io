@@ -52,7 +52,7 @@
   		left:0;
   		right:0;
 	}
-	#land, #biotime, #web, #graph, #stats, #contact {
+	#land, #biotime, #ux, #web, #graph, #stats, #contact {
 		color: #EFF5F5;
 		transition: all 0.3s;
 	}

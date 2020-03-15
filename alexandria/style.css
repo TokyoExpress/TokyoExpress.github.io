@@ -1,0 +1,112 @@
+body {
+	font-family: 'Crimson Text', serif;
+	background-color: #7F1418;
+	transition: all 0.5s ease;
+	/* #C19547 */
+}
+
+#logos {
+	display: block;
+	width: auto;
+	margin: 50px auto;
+	text-align: center;
+}
+
+#logos img {
+	display: inline-block;
+}
+
+.day {
+	transition: all 0.5s ease;
+}
+
+#yesterday, #ereday {
+	opacity: 0;
+	display: none;
+}
+
+#yesterday .card, #yesterday .extras, #yesterday .extras p {
+	color: black;
+}
+
+.day img {
+	display: block;
+	margin: 0 auto;
+	padding: 0px;
+	border: 15px inset #C19547;
+	width: 60%;
+}
+
+#ereday img {
+	width: 35%;
+}
+
+#yesterday img {
+	border: 15px inset black;
+}
+
+#nav {
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	width: 500px;
+}
+
+button {
+	transition: all 1.5s ease;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: white;
+	background-color: #7F1418;
+	cursor: pointer;
+	padding: 3px 10px;
+	border-radius: 30px;
+	border: hidden;
+}
+
+#day3 {
+	background-color: white;
+	color: #7F1418;
+}
+
+.card {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: white;
+	font-size: 30px;
+	line-height: 10px;
+}
+
+.extras {
+	margin: 50px auto;
+	font-size: 22px;
+	line-height: 28px;
+	color: white;
+}
+
+.extras p {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+	#logo2 {
+		width: 0px;
+	}
+	#nav {
+		width: 75%;
+	}
+	.day img {
+		width: 80%;
+	}
+	#ereday img {
+		width: 80%;
+	}
+	.card {
+		font-size: 24px;
+	}
+	.extras {
+		font-size: 18px;
+	}
+}
