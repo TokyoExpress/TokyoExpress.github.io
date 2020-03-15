@@ -102,17 +102,17 @@ button {
 	}
 	.day img {
 		width: 80%;
-		border: 5px inset #C19547;
+		border: 10px inset #C19547;
 	}
 	#yesterday img {
-		border: 5px inset black;
+		border: 10px inset black;
 	}
 	#ereday img {
 		width: 80%;
 	}
 	.card {
 		font-size: 18px;
-		line-height: 8px;
+		line-height: 6px;
 		margin-top: 25px;
 		margin-bottom: 25px;
 	}
