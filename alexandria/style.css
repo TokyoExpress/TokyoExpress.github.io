@@ -65,7 +65,6 @@ body {
 #talk h1 {
 	color: white;
 	font-size: 42px;
-	width: 90%;
 	margin: 0 40px 5% 40px;
 	justify-self: center;
 }
@@ -176,6 +175,7 @@ input[type=submit] {
 	}
 	#talk h1 {
 		font-size: 28px;
+		text-align: center;
 	}
 	#talk p {
 		font-size: 14px;
