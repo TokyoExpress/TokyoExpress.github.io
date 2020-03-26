@@ -1,128 +1,150 @@
 body {
-	font-family: 'Crimson Text', serif;
-	background-color: #7F1418;
-	transition: all 0.5s ease;
-	/* #C19547 */
+	font-family: 'Montserrat', sans-serif;
+	background-image: url("bg.png");
+	background-size: cover;
+	background-position: center center;
+	/* #C19547 2275x1794*/
 }
 
-#logos {
-	display: block;
-	width: auto;
-	margin: 50px auto;
-	text-align: center;
+#one {
+	display: grid;
+	position: absolute;
+	bottom: 0;
+	height: 90%;
+	grid-template-columns: 52% 48%;
 }
 
-#logos img {
-	display: inline-block;
-}
-
-.day {
-	transition: all 0.5s ease;
-}
-
-#yesterday, #ereday {
-	opacity: 0;
+#logo2 {
+	width: 200px;
 	display: none;
 }
 
-#yesterday .card, #yesterday .extras, #yesterday .extras p {
-	color: black;
+#frame {
+	position: relative;
+	grid-column-start: 1;
+	background-image: url("finaltown.png");
+	background-size: 697px 547px;
+	width: 697px;
+	height: 547px;
+	justify-self: center;
+	align-self: center;
 }
 
-.day img {
-	display: block;
-	margin: 0 auto;
-	padding: 0px;
-	border: 15px inset #C19547;
-	width: 60%;
+#catch {
+	width: 223px;
+	position: absolute;
+	top: 70px;
+	left: 237px;
 }
 
-#ereday img {
-	width: 35%;
+#talk {
+	grid-column-start: 2;
+	position: relative;
+	align-self: center;
 }
 
-#yesterday img {
-	border: 15px inset black;
+#talk h1 {
+	color: white;
+	font-size: 42px;
+	width: 90%;
+	margin: 0 40px 5% 40px;
+	justify-self: center;
 }
 
-#nav {
-	display: flex;
-	justify-content: space-between;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 25px;
-	width: 500px;
-}
-
-button {
-	transition: all 1.5s ease;
-	font-family: 'Roboto', sans-serif;
+#talk p {
+	margin: 5% 40px 5% 40px;
 	font-size: 18px;
+	line-height: 24px;
 	color: white;
+}
+
+#logos {
+	width: 200px;
+	display: block;
+	position: absolute;
+	top: 4%;
+	right: 50%;
+	margin-right: -100px;
+}
+
+form {
+	margin-left: 30px;
+}
+
+form .block {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+input[type=text] {
+	width: 125px;
+	background: none;
+	color: white;
+	padding: 5px;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+input[type=email] {
+	background: none;
+	color: white;
+	padding: 5px;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+input[type=submit] {
 	background-color: #7F1418;
+	border: none;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	padding: 10px 20px;
+	border-radius: 15px;
+	margin: 10px 20px;
 	cursor: pointer;
-	padding: 3px 10px;
-	border-radius: 30px;
-	border: hidden;
 }
 
-#day3 {
-	background-color: white;
-	color: #7F1418;
+#talk form p {
+	font-size: 14px;
+	margin: 0;
 }
 
-.card {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	color: white;
-	font-size: 30px;
-	line-height: 10px;
+#talk #parting {
+	font-size: 14px;
+	margin: 30px 0 0 40px;
 }
 
-.extras {
-	margin: 50px auto;
-	font-size: 22px;
-	line-height: 28px;
+#parting a {
 	color: white;
 }
 
-.extras p {
-	margin-bottom: 10px;
+@media screen and (max-width: 1475px) {
+	#talk h1 {
+		font-size: 38px;
+	}
+	input[type=submit] {
+		margin: 10px 0;
+	}
 }
 
-@media screen and (max-width: 900px) {
-	#logos {
-		margin: 30px auto;
+@media screen and (max-width: 1350px) {
+	#one {
+		display: block;
 	}
-	#logo2 {
-		width: 0px;
+	body {
+		background-image: url("bg2.png");
+		background-size: 400%;
 	}
-	#nav {
-		width: 75%;
+}
+
+@media screen and (max-width: 700px) {
+	#frame {
+		margin: 50px auto;
 	}
-	button {
-		font-size: 12px;
-	}
-	.day img {
-		width: 80%;
-		border: 10px inset #C19547;
-	}
-	#yesterday img {
-		border: 10px inset black;
-	}
-	#ereday img {
-		width: 80%;
-	}
-	.card {
-		font-size: 18px;
-		letter-spacing: 0px;
-		line-height: 6px;
-		margin-top: 25px;
-		margin-bottom: 25px;
-	}
-	.extras {
-		margin: 25px auto;
-		font-size: 14px;
-		line-height: 20px;
+	#talk #parting {
+		margin-bottom: 30px;
 	}
 }
