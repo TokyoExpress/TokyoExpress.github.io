@@ -143,8 +143,31 @@ input[type=submit] {
 @media screen and (max-width: 700px) {
 	#frame {
 		margin: 50px auto;
+		background-size: 303px 236px;
+		width: 303px;
+		height: 236px;
+	}
+	#catch {
+		width: 97px;
+		position: absolute;
+		top: 29px;
+		left: 103px;
 	}
 	#talk #parting {
 		margin-bottom: 30px;
+	}
+	#talk h1 {
+		font-size: 28px;
+	}
+	#talk p {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	form .block {
+		display: block;
+		margin: 10px 0 10px 10px;
+	}
+	#talk #parting {
+		font-size: 12px;
 	}
 }
