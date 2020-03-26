@@ -1,6 +1,6 @@
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #6D6D6D;
+	background-color: #A9A9A9;
 	/*background-image: url("bg.png");
 	background-size: cover;
 	background-position: center center; */
@@ -152,10 +152,6 @@ input[type=submit] {
 @media screen and (max-width: 1350px) {
 	#one {
 		display: block;
-	}
-	body {
-		background-image: url("bg2.png");
-		background-size: 400%;
 	}
 }
 
