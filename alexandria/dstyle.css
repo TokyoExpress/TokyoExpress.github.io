@@ -108,6 +108,11 @@ button {
 	margin-bottom: 10px;
 }
 
+.square {
+	height: 60px;
+	width: 60px;
+}
+
 @media screen and (max-width: 900px) {
 	.day {
 		margin-top: 105px;
@@ -123,10 +128,10 @@ button {
 		margin: 10px auto 20px auto;
 	}
 	.colors {
-		margin: 25px auto;
+		margin: 25px 0;
 		display: flex;
 		direction: row;
-		justify-content: space-between;
+		justify-content: center;
 	}
 	button {
 		font-size: 12px;
