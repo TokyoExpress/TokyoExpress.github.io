@@ -17,6 +17,7 @@ body {
 }
 
 .day {
+	margin-top: 200px;
 	transition: all 0.5s ease;
 }
 
@@ -37,6 +38,15 @@ body {
 	width: 60%;
 }
 
+.day .quote {
+	font-size: 18px;
+	text-align: center;
+}
+
+.day .cite {
+	text-align: center;
+}
+
 #ereday img {
 	width: 35%;
 }
@@ -54,6 +64,14 @@ body {
 	width: 500px;
 }
 
+#navi {
+	transition: all 0.5s ease;
+	position: fixed;
+	top: 0;
+	background: #7F1418;
+	z-index: 9999;
+	width: 100%;
+}
 button {
 	transition: all 1.5s ease;
 	font-family: 'Roboto', sans-serif;
@@ -91,14 +109,24 @@ button {
 }
 
 @media screen and (max-width: 900px) {
+	.day {
+		margin-top: 105px;
+	}
 	#logos {
-		margin: 30px auto;
+		margin: 20px auto 10px auto;
 	}
 	#logo2 {
 		width: 0px;
 	}
 	#nav {
-		width: 75%;
+		width: 65%;
+		margin: 10px auto 20px auto;
+	}
+	.colors {
+		margin: 25px auto;
+		display: flex;
+		direction: row;
+		justify-content: space-between;
 	}
 	button {
 		font-size: 12px;
