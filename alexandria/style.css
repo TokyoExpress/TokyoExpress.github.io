@@ -42,9 +42,9 @@ body {
 	position: relative;
 	grid-column-start: 1;
 	background-image: url("finaltown.png");
-	background-size: 697px 547px;
+	background-size: 697px 545px;
 	width: 697px;
-	height: 547px;
+	height: 545px;
 	justify-self: center;
 	align-self: center;
 }
@@ -137,6 +137,10 @@ input[type=submit] {
 
 #parting a {
 	color: white;
+}
+
+#one #talk #thanks {
+	visibility: hidden;
 }
 
 @media screen and (max-width: 1475px) {
