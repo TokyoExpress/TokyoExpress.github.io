@@ -235,8 +235,8 @@
 	}
 	.project {
 		margin: 50px auto;
-		width: 400px;
-		height: 425px;
+		width: 300px;
+		height: 450px;
 		background-color: #2D383B;
 	}
 	.projtitle {
@@ -246,9 +246,11 @@
 		padding-left: 0;
 	}
 	.projblurb {
+		padding-left: 25px;
+		text-align: center;
 		color: white;
 		font-size: 16px;
 		line-height: 22px;
-		width: 300px;
+		width: 250px;
 	}
 }
