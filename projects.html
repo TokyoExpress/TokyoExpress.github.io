@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="icon" href="https://i.imgur.com/UGHyZNg.png">
+	<title>Explore HQ</title>
+	<link rel = "stylesheet" href = "projstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+    <meta http-equiv="refresh" content="3600">
+    <meta name="description" content= "ADVENTURE TIME">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="navigation">
+		<img id="logo" src="https://i.imgur.com/Wgv9sYm.png" width=173px height=60px>
+		<img id="diff" src="https://i.imgur.com/u5fiMBm.png" width=55px height=50px></img>
+		<a href="index.html">HOME</a>
+		<a class="current" href="project.html">PROJECTS</a>
+		<a href="questlog">BLOG</a>
+		<a href="portfolio.html">PORTFOLIO</a>
+		<a>CONTACT</a>
+	</div>
+
+<div id="topnav">
+  <a class="active"><img id="altlogo" src="https://i.imgur.com/Wgv9sYm.png" width=173px height=60px></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">HOME</a>
+    <a href="#contact">PROJECTS</a>
+    <a href="#about">BLOG</a>
+    <a href="#about">PORTFOLIO</a>
+    <a href="#about">CONTACT</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	<div id="title">
+		<p id="projects">PROJECTS</p>
+	</div>
+	<div id="project1" class="project">
+		<p id="projtitle1" class="projtitle">Alexandria</p>
+		<p id="projblurb1" class="projblurb">Machine learning meets the visual arts in this upcoming mobile app designed to give you a personalized, effortless, interactive art experience. Giving you one piece of curated art per day, Alexandria learns about your taste - the colors, styles, and visual aesthetics you prefer - and creates a shareable, easy-to-digest "aesthetic profile" that helps you think more creatively about the people and things around you.</p>
+		<img class="showcase"></img>
+	</div>
+	<div id="project2" class="project">
+		<p id="projtitle2" class="projtitle">Recon for Twitch</p>
+		<p id="projblurb2" class="projblurb">Find the games you want to watch, faster. Recon for Twitch is an upcoming Google Chrome extension that leverages the use of image processing and classification to determine details about a streamer's current status (e.g. in-game, character playing, etc.) from the Twitch live thumbnail alone. It will then allow you to filter and sort by those categories, helping you find a good stream to tune in to without any hassle.</p>
+		<img class="showcase"></img>
+	</div>
+	<div id="project3" class="project">
+		<p id="projtitle3" class="projtitle">PBT Cabernet</p>
+		<p id="projblurb3" class="projblurb">A niche project for members of the mechanical keyboard community, this keycap set offers a lower contrast color scheme for people who want to customize their keyboard with a rich, red color. 3D modeling and rendering software Blender was used to create mockup images, and various assets were produced to market and gain interest for the product, which was then crowdfunded via international vendors.</p>
+		<img class="showcase"></img>
+	</div>
+	<div id="project4" class="project">
+		<p id="projtitle4" class="projtitle">EmbarcTV</p>
+		<p id="projblurb4" class="projblurb">A lighthearted content creation channel with local friends.</p>
+		<img class="showcase"></img>
+	</div>
+	<div id="project5" class="project">
+		<p id="projtitle5" class="projtitle">Untitled Music Project</p>
+		<p id="projblurb5" class="projblurb">Nothing to click yet. Just putting this here to motivate myself to actually work on this and get better at my instruments.</p>
+		<img class="showcase"></img>
+	</div>
+</body>
+</html>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+$("#project1").hover(function() {
+	$("#project1").css("background-color", "#2D383B");
+	$("#project1").css("background-image", "url(\"https://i.imgur.com/cVjNWrY.png\")");
+	$("#projtitle1").css("color", "white");
+	$("#projblurb1").css("color", "white");
+}, function() {
+	$("#project1").css("background-color", "white");
+	$("#project1").css("background-image", "none");
+	$("#projtitle1").css("color", "#2D383B");
+	$("#projblurb1").css("color", "#2D383B");
+});
+
+$("#project2").hover(function() {
+	$("#project2").css("background-color", "#2D383B");
+	$("#project2").css("background-image", "url(\"https://i.imgur.com/rebryi6.png?1\")");
+	$("#projtitle2").css("color", "white");
+	$("#projblurb2").css("color", "white");
+}, function() {
+	$("#project2").css("background-color", "white");
+	$("#project2").css("background-image", "none");
+	$("#projtitle2").css("color", "#2D383B");
+	$("#projblurb2").css("color", "#2D383B");
+});
+
+$("#project3").hover(function() {
+	$("#project3").css("background-color", "#2D383B");
+	$("#project3").css("background-image", "url(\"https://i.imgur.com/2jEfUv6.jpg?1\")");
+	$("#projtitle3").css("color", "white");
+	$("#projblurb3").css("color", "white");
+}, function() {
+	$("#project3").css("background-color", "white");
+	$("#project3").css("background-image", "none");
+	$("#projtitle3").css("color", "#2D383B");
+	$("#projblurb3").css("color", "#2D383B");
+});
+
+$("#project4").hover(function() {
+	$("#project4").css("background-color", "#2D383B");
+	$("#project4").css("background-image", "url(\"https://i.imgur.com/JzhPebu.png\")");
+	$("#projtitle4").css("color", "white");
+	$("#projblurb4").css("color", "white");
+}, function() {
+	$("#project4").css("background-color", "white");
+	$("#project4").css("background-image", "none");
+	$("#projtitle4").css("color", "#2D383B");
+	$("#projblurb4").css("color", "#2D383B");
+});
+
+$("#project5").hover(function() {
+	$("#project5").css("background-color", "#2D383B");
+	$("#projtitle5").css("color", "white");
+	$("#projblurb5").css("color", "white");
+}, function() {
+	$("#project5").css("background-color", "white");
+	$("#projtitle5").css("color", "#2D383B");
+	$("#projblurb5").css("color", "#2D383B");
+});
+
+$("#project1").click(function () { window.open("https://alexandria.app"); return False; });
+$("#project2").click(function () { window.open("https://github.com/TokyoExpress/recon-for-twitch"); return False; });
+$("#project3").click(function () { window.open("https://geekhack.org/index.php?topic=106991"); return False; });
+$("#project4").click(function () { window.open("https://www.youtube.com/channel/UCmZVYCa6_DffPj4XWNuGFuQ"); return False; });
+
+	// var offset = $("#logo").offset();
+	// $("#projects").offset({left: offset.left});
+</script>
