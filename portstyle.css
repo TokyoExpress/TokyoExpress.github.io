@@ -495,6 +495,55 @@
 	textarea {
 		width: 75%;
 	}
+	#uxbox {
+		background-color: white;
+		height: 900px;
+		display: grid;
+		grid-template-columns: 45% 55%;
+		grid-template-rows: repeat(64, 25px);
+	}
+	#uxhead {
+		font-size: 72px;
+		grid-row-start: 2;
+		grid-column-start: 1;
+		text-align: center;
+	}
+	#uxp {
+		font-size: 24px;
+		grid-row-start: 6;
+		grid-column-start: 1;
+		text-align: center;
+	}
+	#uxsketch {
+		display: block;
+		grid-row-start: 12;
+		grid-column-start: 1;
+		margin: 0 auto;
+	}
+	#uxlinks {
+		display: flex;
+		flex-direction: column;
+		grid-column-start: 2;
+		grid-row-start: 8;
+		justify-self: center;
+		color: white;
+		background: none;
+		width: 100%;
+	}
+	#uxlinks a {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 30px;
+		margin: 50px 0;
+		background-color: white;
+		text-align: center;
+	}
+	#uxlinks #special {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 30px;
+		margin: 50px 0;
+		background-color: white;
+		text-align: center;
+	}
 	@media screen and (max-width: 1500px) {
 		#bio img {
 			height: 75px;
@@ -594,6 +643,24 @@
  			font-size: 14px;
  			text-align: center;
  		}
+ 		#uxbox {
+		background-color: white;
+		height: 1300px;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(64, 25px);
+		}
+
+		#uxsketch {
+			width: 300px;
+		}
+		#uxlinks {
+			grid-column-start: 1;
+			grid-row-start: 25;
+		}
+		#uxlinks a, #uxlinks #special {
+			font-size: 24px;
+		}
 	#contactbox {
 		height: 1300px;
 		display: grid;
