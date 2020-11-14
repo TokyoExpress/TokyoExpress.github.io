@@ -54,7 +54,16 @@
   			document.getElementById('stats').style.color="#EFF5F5";
   			document.getElementById('contact').style.color="#EFF5F5";
   			}
-  			if (winScroll > 1900 && winScroll <= 2800) {
+  			if (winScroll > 1900 && winScroll <= 2850) {
+  			document.getElementById('land').style.color="#EFF5F5";
+  			document.getElementById('biotime').style.color="#EFF5F5";
+  			document.getElementById('ux').style.color="#05B0CD";
+  			document.getElementById('web').style.color="#EFF5F5";
+  			document.getElementById('graph').style.color="#EFF5F5";
+  			document.getElementById('stats').style.color="#EFF5F5";
+  			document.getElementById('contact').style.color="#EFF5F5";
+  			}
+  			if (winScroll > 2850 && winScroll <= 3750) {
   			document.getElementById('land').style.color="#EFF5F5";
   			document.getElementById('biotime').style.color="#EFF5F5";
   			document.getElementById('ux').style.color="#EFF5F5";
@@ -63,7 +72,7 @@
   			document.getElementById('stats').style.color="#EFF5F5";
   			document.getElementById('contact').style.color="#EFF5F5";
   			}
-  			if (winScroll > 2800 && winScroll <= 4050) {
+  			if (winScroll > 3750 && winScroll <= 5000) {
   			document.getElementById('land').style.color="#EFF5F5";
   			document.getElementById('biotime').style.color="#EFF5F5";
   			document.getElementById('ux').style.color="#EFF5F5";
@@ -72,22 +81,13 @@
   			document.getElementById('stats').style.color="#EFF5F5";
   			document.getElementById('contact').style.color="#EFF5F5";
   			}
-   			if (winScroll > 4050 && winScroll <= 4950) {
+   			if (winScroll > 5000 && winScroll <= 5900) {
   			document.getElementById('land').style.color="#EFF5F5";
   			document.getElementById('biotime').style.color="#EFF5F5";
   			document.getElementById('ux').style.color="#EFF5F5";
   			document.getElementById('web').style.color="#EFF5F5";
   			document.getElementById('graph').style.color="#EFF5F5";
   			document.getElementById('stats').style.color="#05B0CD";
-  			document.getElementById('contact').style.color="#EFF5F5";
-  			}
-   			if (winScroll > 4950 && winScroll <= 5900) {
-  			document.getElementById('land').style.color="#EFF5F5";
-  			document.getElementById('biotime').style.color="#EFF5F5";
-  			document.getElementById('ux').style.color="#05B0CD";
-  			document.getElementById('web').style.color="#EFF5F5";
-  			document.getElementById('graph').style.color="#EFF5F5";
-  			document.getElementById('stats').style.color="#EFF5F5";
   			document.getElementById('contact').style.color="#EFF5F5";
   			}
    			if (winScroll > 5900) {
@@ -132,10 +132,10 @@
 	<div id="nav">
 		<h2><a href="#top" id="land">landing</a></h2>
 		<h2><a href="#bios" id="biotime">bio</a></h2>
+		<h2><a href="#youex" id="ux">UI/UX</a></h2>
 		<h2><a href="#webs" id="web">web design</a></h2>
 		<h2><a href="#graphs" id="graph">graphic design</a></h2>
 		<h2><a href="#statsy" id="stats">data science</a></h2>
-		<h2><a href="#youex" id="ux">UI/UX</a></h2>
 		<h2><a href="#contacts" id="contact">contact</a></h2>
 	</div>
 	<a name="bios"></a>
@@ -168,6 +168,19 @@
 			<p id="tag">"Let's go exploring!"</p>
 			<p id="firstp">I'm Samuel Z Guo, Bay Area born and raised. Most people call me Sam. I'm currently a sophomore at the University of California, Santa Barbara studying Financial Mathematics and Statistics. In my free time, I like to look for new things to do or work on various projects. I analyze data, I develop games, I run a clothing brand, I update a blog, I make stickers, I design websites, I play jazz piano, and I draw once in a while (I'll admit I'm not very good at that one). I'm experienced in many industry standard tools and programs, most of which are shown on the left (hover for name).</p>
 			<p id="secp">But more important than what I know is why and how I know them. I have a passion to create, and I will stop at nothing to make myself someone who is capable of making things, whether that be logos, apps, reports, poetry, animations, apps, or anything else. That's the reason I never shy away from an opportunity to pick up a new skill. I'm driven and I'm self-motivated. I am always eager to learn and I continually persevere in improving myself and my skills each and every day. I know that putting in the time and effort will yield results, and I'm determined to continue exploring my capabilities in these fields and the ways I can use these resources.</p>
+	</div>
+	<a name="youex"></a>
+	<div class="box"></div>
+	<div id="uxbox">
+		<h1 id="uxhead">UI/UX</h1>
+		<p id="uxp">concept - sketch - wireframe - prototype</p>
+		<img id="uxsketch" width="600px" src="https://i.imgur.com/Nz0ddVS.png" alt="sketches"></img>
+		<div id="uxlinks">
+			<a target="_blank" href="https://i.imgur.com/KkFzwq5.png">Mobile Screen Wireframes</a>
+			<a id="special" target="_blank" href="https://www.figma.com/proto/90impmRbAdzSbz463hWXGg/High-Fidelity?node-id=34%3A199&scaling=scale-down">High Fidelity iPhone 11 Prototype App</a>
+			<a target="_blank" href="https://www.figma.com/proto/MmBSkpS7r6lbTu7nEsUXDO/Analytics-Dash?node-id=2%3A0&scaling=min-zoom">Web Analytics Dashboard Concept</a>
+			<a target="_blank" href="https://www.figma.com/proto/IWrfCPCxMX1xDMI2wRkKOX/Quiz-v2-Results?node-id=1%3A1333&scaling=min-zoom">Web App Quiz Results Concept</a>
+		</div>
 	</div>
 	<a name="webs"></a>
 	<div class="box"></div>
@@ -249,19 +262,6 @@
 			<p>chrome extension for image classification of livestream thumbnails</p>
 			<a target="_blank" href="https://prompt-box.herokuapp.com/">Prompt Box (WIP)</a>
 			<p>deduction game based on natural language processing</p>
-		</div>
-	</div>
-	<a name="youex"></a>
-	<div class="box"></div>
-	<div id="uxbox">
-		<h1 id="uxhead">UI/UX</h1>
-		<p id="uxp">concept - sketch - wireframe - prototype</p>
-		<img id="uxsketch" width="600px" src="https://i.imgur.com/Nz0ddVS.png" alt="sketches"></img>
-		<div id="uxlinks">
-			<a target="_blank" href="https://i.imgur.com/KkFzwq5.png">Mobile Screen Wireframes</a>
-			<a id="special" target="_blank" href="https://www.figma.com/proto/90impmRbAdzSbz463hWXGg/High-Fidelity?node-id=34%3A199&scaling=scale-down">High Fidelity iPhone 11 Prototype App</a>
-			<a target="_blank" href="https://www.figma.com/proto/MmBSkpS7r6lbTu7nEsUXDO/Analytics-Dash?node-id=2%3A0&scaling=min-zoom">Web Analytics Dashboard Concept</a>
-			<a target="_blank" href="https://www.figma.com/proto/IWrfCPCxMX1xDMI2wRkKOX/Quiz-v2-Results?node-id=1%3A1333&scaling=min-zoom">Web App Quiz Results Concept</a>
 		</div>
 	</div>
 	<div class="box"></div>
