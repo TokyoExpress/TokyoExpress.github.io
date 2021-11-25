@@ -107,6 +107,7 @@
 	.post h1 {
 		text-align: center;
 		font-size: 24px;
+		margin: 25px auto;
 	}
 	.post a {
 		font-size: 10pt;
@@ -223,7 +224,7 @@
 			margin: 75px auto;
 		}
 		.post p, .post h1 {
-			width: 90%;
+			width: 95%;
 		}
 		#page {
 			margin-top: 350px;
