@@ -237,6 +237,7 @@
 		}
 		#page h1 {
 			font-size: 24px;
+                        width: 85%;
 		}
 		#page p, dl, ul {
 			font-size: 14px;
