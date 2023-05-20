@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SAMUEL Z GUO</title>
+    <link>http://example.org/</link>
+    <description>Recent content on SAMUEL Z GUO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Apr 2023 22:20:15 -0700</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ABOUT</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>Hey! Welcome to my website.
+I&amp;rsquo;m Sam. I like to tinker with things. Professionally, that means building machine learning models and other AI tools. Personally, I enjoy playing electric guitar, cooking, woodworking, and other creative activities.
+I&amp;rsquo;m currently a machine learning engineer at Hive AI, where I work on building robust image and text classifiers for enterprise solutions. Recently, I&amp;rsquo;ve been training large language models for chat and assistant applications.</description>
+    </item>
+    
+    <item>
+      <title>CONTACT</title>
+      <link>http://example.org/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/contact/</guid>
+      <description>Connections make the world go round, so I&amp;rsquo;m happy to meet people from all walks of life.
+For most professional purposes, I can be reached on LinkedIn.
+Otherwise, feel free to send me an email at samuelzguo@gmail.com.</description>
+    </item>
+    
+  </channel>
+</rss>
