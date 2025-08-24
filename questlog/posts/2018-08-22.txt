@@ -1,8 +1,8 @@
----
+===
 date: August 22, 2018
 title: Fear and Inspiration: A Year's Reflection
 time: 1:36 AM
----
+===
 One of my favorite go-to quotes for inspiration is the following:
 
 "If I quit now, I will soon be back to where I started. And when I started I was desperately wishing to be where I am now."

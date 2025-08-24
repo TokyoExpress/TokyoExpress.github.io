@@ -1,8 +1,8 @@
----
+===
 date: September 3, 2020
 title: Pretend
 time: 5:54 AM
----
+===
 Pretend this is the last day.
 
 The last day of what, you ask? Certainly nothing out of the ordinary seems to be going on. Life has been the same, and will be the same, for quite a while. Two years remain in college for me, but your circumstances might be slightly different. Perhaps you've been at the same job for a couple decades now, with no retirement in sight. Maybe you're somewhere in your junior year of high school, and you can't even begin to imagine what it's like to leave your hometown. Or maybe you've been on the road for some time, trying to find out what to do next.

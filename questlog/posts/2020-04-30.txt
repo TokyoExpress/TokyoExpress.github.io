@@ -1,8 +1,8 @@
----
+===
 date: April 30, 2020
 title: Rendering
 time: 9:30 PM
----
+===
 About a year ago I had to use the 3D modelling software Blender to make some graphics and renders for a mechanical keyboard keycap set I was designing with my friend. If you don't really know anything about mechanical keyboards, you can basically treat this like a new clothing line drop or something, except instead of a full line of products it's just a hoodie and a hat. It's also designed by a fan of clothes and has to be pre-ordered by a minimum quantity of people (usually around 150-250) in order for the products to even be manufactured. Long story short I had to learn how to use some modelling software, and of course I didn't really learn it from scratch because I'm impatient and opted instead to learn the very bare minimum needed to produce my render images, which is why to this date I still do not actually know how to use Blender. Fortunately I have learned from my mistakes and am actually taking the time to learn the fundamentals of the software now so I can add it to the list of things I can actually confidently say I know how to do.
 
 Rendering an image requires an intensive amount of computer power, so whenever I was done setting up the scene and fixing the lighting and camera angles I would have to click a "Render Image" button that would then begin the process of creating said image, which could take anywhere from a few minutes to a couple hours depending on the settings and quality of the render. It would show you little squares of the completed image as it continued to process it, along with a progress bar to let you know when the estimated completion time was.

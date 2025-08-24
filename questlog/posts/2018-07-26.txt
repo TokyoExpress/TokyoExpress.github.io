@@ -1,8 +1,8 @@
----
+===
 date: July 26, 2018
 title: The Status Quo
 time: 3:17 AM
----
+===
 The status quo is a phrase meaning "the existing state of affairs", but I like to use it a lot just to refer to "the current situation". The status quo defines what I do every day. In essence, it is, today, what defines this chapter or episode of my life.
 
 For example, for me, the status quo for Fall 2017 was probably me coming home, playing a lot of video games, and studying until 3-4 AM, only to wake up at 8 AM to go to school, sleep for 3 hours, go out for tea after, and repeat.

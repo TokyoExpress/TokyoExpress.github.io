@@ -1,8 +1,8 @@
----
+===
 date: July 23, 2018
 title: Day 4
 time: 6:16 PM
----
+===
 Life is like riding a bicycle. Except that there is no bike, and in its place is an endless torrent of inescapable misery. You suck.
 
 I created a document called "Work" about four months ago that was supposed to help me get back on track and organize what I should do during the daytime. It's open 24/7 on my laptop, but it doesn't really do anything. I guess it just helps me feel a little bit better about wasting time because hey, at least I have this perfect Google Doc that can help me get back on track immediately, right? Probably not.

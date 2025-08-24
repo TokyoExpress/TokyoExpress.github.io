@@ -1,8 +1,8 @@
----
+===
 title: Planting Bugs (Motivation, Part 2)
 date: January 25, 2020
 time: 3:49 AM
----
+===
 I am not particularly bothered by unfinished projects, especially ones with no real deadline. As far as I'm concerned, they contain a substantial amount of progress and very little mistakes. Of course, they aren't complete, but that will be solved in the near future. I'm not delivering this project to anyone but myself, so there's no rush. Because the project is never actually due, I can always wait until tomorrow to finish it. A very large number of tomorrows pass, each one the same as the previous, until the project is either no longer relevant or overshadowed by new ambitions.
 
 And just like that, what had the potential to become <i>something</i> is left behind to waste away, slowly forgotten and forever unfinished.

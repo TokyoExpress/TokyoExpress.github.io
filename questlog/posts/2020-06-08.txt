@@ -1,8 +1,8 @@
----
+===
 date: June 8, 2020
 title: Derivatives
 time: 5:37 AM
----
+===
 It's almost six in the morning and I have an Economics final at noon. I have an A- in the class pre-final, and the final is actually now optional and I will retain my current grade as long as I complete 4 out of 6 problems correctly in a special "mastery" section. So, of course, instead of studying hard and making sure that I don't lose my A in the classs, I'm just going to write one of these things. Classic.
 
 You may recognize the term "derivative" from your pre-calculus classes in high school (or more advanced ones in undergrad if you decided to major in a mathematics-related field, to which I will ask: why?) They are pretty useful whenever you're dealing with anything that relates to functions or having to find the instantaneous rate of change. Unfortunately, that's not really what I'm referring to when I made it the title of this post. A derivative is simply something that is based off or "derived" from something else, a concept which I feel applies to the bulk of modern society.

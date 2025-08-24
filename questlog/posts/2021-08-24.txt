@@ -1,8 +1,8 @@
----
+===
 date: August 24, 2021
 title: Greed and the Inevitable End
 time: 2:33 PM
----
+===
 Today I made around $1,200 off of a call option. I know that's not particularly much in the world of investment compared to most portfolios, but it's always nice to have money. I love options because of their intersection with time series and random processes, but whenever I own one, I swear I'm just stressing about it for every second between 6 AM and 1 PM. That's a long time to just sit there and watch a number go up and down. And sure, it was not bad to get a free grand, but I was a little peeved: had I sold the option about 10 minutes earlier than I did, it would've been a little over $2,100 in profit instead.
 
 Maybe you understand, or maybe you're wondering why I would be so ungrateful, having received a nice blessing in the first place. It's just $900, and it's not like there's any way I could've known that that was the optimal time to make the trade. I can see both sides, but it's revealed to me a particularly insidious trait that we all seem to have in one way or another.

@@ -52,9 +52,8 @@
 
       let metadata = {};
       let content = raw;
-      console.log("RAW FILE:\n", JSON.stringify(raw));
       const txt = raw.replace(/\r\n/g, "\n").replace(/^\uFEFF/, "");
-      const match = txt.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)/);
+      const match = txt.match(/^===\s*\n([\s\S]*?)\n===\s*\n?([\s\S]*)/);
       if (match) {
         const fm = match[1];
         content = match[2];

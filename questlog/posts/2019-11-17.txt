@@ -1,8 +1,8 @@
----
+===
 date: November 17, 2019
 title: The Adventure Revitalized
 time: 5:47 PM
----
+===
 Some backstory:
 
 Between the years 2016 and 2018 I developed a very intense yet not very productive case of workaholism that stemmed from the idea that time and effort would inevitably lead to results, given that I had been given a pretty OP character perk that allowed me to just teach myself things. Over this period of time I learned a moderate amount of piano, drums, writing, design, cooking, and other skills.

@@ -1,8 +1,8 @@
----
+===
 date: August 9, 2018
 title: Simplicity, Part 1
 time: 12:43 AM
----
+===
 I guess all of these are part ones, because I always feel like I'll have more to say later. I'm also just not going to use the "weirdo deep rants" tag for now because these are all pretty much that. Maybe when I actually start documenting my life, I'll use "blog" and "weirdo deep rants" separately. (Edit 12/22/2019 this website does not have tags coded in so the tag system is now obsolete lol)
 
 Here's possibly the worst analogy of all time. I've been tinkering with designs lately to try to improve my design skills. Wow, that was probably the worst sentence of all time. Anyways, after a couple of days, I came up with this design:
