@@ -7,7 +7,8 @@ const POSTS_DIR = path.join(__dirname, "posts");
 const OUTPUT_FILE = path.join(POSTS_DIR, "index.json");
 
 function parseFrontMatter(content) {
-  const match = content.match(/^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]+([\s\S]*)$/);
+  const txt = content.replace(/\r\n/g, "\n").replace(/^\uFEFF/, "");
+  const match = txt.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)/);
   if (!match) return {};
 
   const fm = match[1];

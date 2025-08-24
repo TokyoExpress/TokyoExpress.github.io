@@ -52,9 +52,8 @@
 
       let metadata = {};
       let content = raw;
-      const txt = content.replace(/\r\n/g, "\n");
-      const match = txt.match(/^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]+([\s\S]*)$/);
-      console.log(match);
+      const txt = raw.replace(/\r\n/g, "\n").replace(/^\uFEFF/, "");
+      const match = txt.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)/);
       if (match) {
         const fm = match[1];
         content = match[2];
