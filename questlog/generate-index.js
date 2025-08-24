@@ -43,7 +43,7 @@ function getExcerptByChars(text, maxChars = 175) {
 }
 
 function generateIndex() {
-  const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith(".md"));
+  const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith(".txt"));
 
   const index = files.map(file => {
     const id = path.basename(file, ".txt");
