@@ -46,7 +46,7 @@ function generateIndex() {
   const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith(".md"));
 
   const index = files.map(file => {
-    const id = path.basename(file, ".md");
+    const id = path.basename(file, ".txt");
     const content = fs.readFileSync(path.join(POSTS_DIR, file), "utf8");
     const { metadata, body } = parseFrontMatter(content);
     return {

@@ -43,7 +43,7 @@
 
       setupPostNavigation(slug);
 
-      const response = await fetch(`posts/${slug}.md`)
+      const response = await fetch(`posts/${slug}.txt`)
       if (!response.ok) {
         showError();
         return;
