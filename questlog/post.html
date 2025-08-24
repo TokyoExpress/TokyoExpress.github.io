@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+  </style>
+  <link rel="icon" href="https://i.imgur.com/UGHyZNg.png">
+  <a href="../index.html"><img src="https://i.imgur.com/CBFx6Et.png" id="explore" width=111px height=30px></a>
+  <title>Questlog</title>
+  <link rel = "stylesheet" href = "qstyle.css">
+  <meta charset="UTF-8">
+  <title id="page-title"></title>
+  <meta http-equiv="refresh" content="3600">
+  <meta name="description" content= "ADVENTURE TIME">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div id="nav">
+    <a href='index.html'>Main</a>
+    <a href='about.html'>About</a>
+  </div>
+  <a href="/questlog"><img src="https://i.imgur.com/qrcuFKo.png" id="logo" width=228px height=125px></img></a>
+  <div id="page">
+    <div id="post-header">
+      <span id="prev-post" class="arrow"><b>&lt;</b></span>
+      <h2 id="post-date"></h2>
+      <span id="next-post" class="arrow"><b>&gt;</b></span>
+    </div>
+    <h2 id="post-date"></h2>
+    <h1 id="post-title"></h1>
+    <h3 id="post-time"></h3>
+    <div id="post-content"></div>
+
+  <script>
+    async function loadPost() {
+      // post.html?post=first-post
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get("post");
+      if (!slug) {
+        showError();
+        return;
+      }
+
+      setupPostNavigation(slug);
+
+      const response = await fetch(`posts/${slug}.md`)
+      if (!response.ok) {
+        showError();
+        return;
+      }
+      const raw = await response.text();
+
+      let metadata = {};
+      let content = raw;
+      const txt = content.replace(/\r\n/g, "\n");
+      const match = txt.match(/^---\n([\s\S]+?)\n---\n([\s\S]*)$/);
+      console.log(match);
+      if (match) {
+        const fm = match[1];
+        content = match[2];
+
+        fm.split("\n").forEach(line => {
+          const [key, ...rest] = line.split(":");
+          if (!key) return;
+          metadata[key.trim()] = rest.join(":").trim();
+        });
+      }
+
+      document.getElementById("post-title").textContent = metadata.title ?? "";
+      document.getElementById("post-date").textContent = metadata.date ?? "";
+      document.getElementById("post-time").textContent = metadata.time ?? "";
+
+      const paragraphs = content
+        .trim()
+        .split(/\n\s*\n/)
+        .map(p => `<p>${p}</p>`)
+        .join("");
+      document.getElementById("post-content").innerHTML = paragraphs;
+    }
+
+    async function setupPostNavigation(id) {
+      const res = await fetch('posts/index.json');
+      const posts = await res.json();
+
+      const idx = posts.findIndex(p => p.id === id);
+
+      const prevEl = document.getElementById('prev-post');
+      const nextEl = document.getElementById('next-post');
+
+      if (idx < posts.length - 1) {
+        prevEl.onclick = () => window.location.href = `post.html?post=${posts[idx + 1].id}`;
+        prevEl.classList.remove("empty");
+      } else {
+        prevEl.classList.add("empty");
+      }
+
+      if (idx > 0) {
+        nextEl.onclick = () => window.location.href = `post.html?post=${posts[idx - 1].id}`;
+        nextEl.classList.remove("empty");
+      } else {
+        nextEl.classList.add("empty");
+      }
+    }
+
+    function showError() {
+      document.getElementById("post-title").textContent = "Post Not Found";
+      document.getElementById("post-content").textContent = "Sorry, this post doesn't exist (yet)!";
+    }
+
+    loadPost();
+  </script>
+</body>
+</html>
