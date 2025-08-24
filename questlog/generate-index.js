@@ -7,11 +7,11 @@ const POSTS_DIR = path.join(__dirname, "posts");
 const OUTPUT_FILE = path.join(POSTS_DIR, "index.json");
 
 function parseFrontMatter(content) {
-  const txt = content.replace(/\r\n/g, "\n");
-  const match = txt.match(/^---\n([\s\S]+?)\n---\n/);
+  const match = content.match(/^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]+([\s\S]*)$/);
   if (!match) return {};
 
   const fm = match[1];
+  const body = match[2];
   const metadata = {};
   fm.split("\n").forEach(line => {
     const [key, ...rest] = line.split(":");
@@ -19,7 +19,6 @@ function parseFrontMatter(content) {
     metadata[key.trim()] = rest.join(":").trim();
   });
 
-  const body = txt.slice(match[0].length);
   return { metadata, body };
 }
 
