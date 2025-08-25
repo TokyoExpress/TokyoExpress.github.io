@@ -55,7 +55,7 @@
 	#explore {
 		position: absolute;
 		right: 10%;
-		margin-top: 85px;
+		margin-top: 95px;
 	}
 	#nav {
 		position: absolute;
@@ -236,7 +236,7 @@
 		}
 		#explore {
 			right: 50%;
-			margin-top: 275px;
+			margin-top: 285px;
 			margin-right: -55px;
 		}
 		.posts {
